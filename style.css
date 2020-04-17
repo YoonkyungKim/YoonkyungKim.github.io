@@ -1,0 +1,400 @@
+/** Add any CSS you need to this file. */
+body {
+  margin: 0;
+  background-color: #ECDEB3;
+  /* font for titles */
+  font-family: 'Philosopher', sans-serif;
+  line-height: 20px;
+}
+
+a {
+    text-decoration: none;
+    color: inherit;
+}
+
+li {
+  list-style: none;
+  display: inline-block;
+}
+
+h2 {
+  font-size: 20px;
+  color: #3D8972;
+  padding-bottom: 15px;
+}
+
+/* font for regular */
+
+p {
+  font-family: 'Gotu', sans-serif;
+  font-size: 16px;
+}
+
+label {
+  font-family: 'Gotu', sans-serif;
+  font-size: 14px;
+  color: #674842;
+}
+
+
+/* .site-header {
+  position: fixed;
+  margin-top: 0;
+} */
+
+.header-wrapper {
+  /* min-height: 20vh; */
+  display: flex;
+  align-items: center;
+  /* font-family: 'Raleway', sans-serif; */
+  /* font-family: 'Baloo Paaji 2', cursive; */
+  /* font-family: 'Playfair Display', serif; */
+  /* font-family: 'Inconsolata', monospace; */
+  /* font-family: 'Lora', serif; */
+  font-size: 25px;
+  /* font-weight: 400; */
+  padding: 0 30px 0 30px;
+  /* color: brown; */
+}
+
+.first{
+  flex: 0.4;
+  /* padding: 10px 10px; */
+}
+
+.second {
+  flex: 1.6;
+  padding: 0 10% 0 10%;
+}
+
+.third{
+  flex: 0.4;
+}
+
+.logo_img {
+  width: 100px;
+  margin: 10px 10px;
+}
+
+.nav-ul {
+  padding-left: 0;
+  margin: 0;
+  text-align: center;
+}
+
+.menu-li {
+  /* width: 20%; */
+  padding: 30px;
+  /* text-align: center; */
+  color: #674842;
+}
+
+.menu-li:hover {
+  /* color: #7AA38B; */
+  /* color: #E1715C; */
+  color: #EF7767;
+}
+
+.contact-li {
+  text-align: center;
+  color: #674842;
+}
+
+.contact-ul li:hover {
+  color: #7AA38B;
+}
+
+/* items-header section */
+h1 {
+  min-height: 10vh;
+  text-align: center;
+  /* padding-bottom:30px; */
+  margin-top: 6rem;
+  margin-bottom: 6rem;
+  font-size: 45px;
+  color: #3D8972;
+  text-decoration: underline;
+}
+
+/* content-container */
+.content-container {
+  padding: 0 30px 0 30px;
+}
+
+/* items section */
+#items {
+  min-height: 10vh;
+  margin-bottom: 4rem;
+  margin-top: 20px;
+  overflow: hidden;
+  padding: 0 30px 0 30px;
+  margin: 0 auto;
+}
+
+.items-wrapper{
+  margin: 0 auto;
+  text-align: center;
+}
+
+.item-card {
+  text-align: center;
+  /* display: inline-block; */
+  display: none;
+  width: 23%;
+  padding: 0 3%;
+  vertical-align: top;
+}
+
+
+.item-info {
+  text-align: center;
+}
+
+.item-img{
+  max-width: 100%;
+  margin: 0 auto;
+}
+
+.show {
+  display: inline-block;
+}
+
+/* item header */
+
+.category-title{
+  font-family: 'Philosopher', sans-serif;
+  font-weight: 700;
+  font-style: italic;
+}
+
+
+/* footer */
+#footer{
+  margin-top: 25px;
+}
+
+hr {
+   border-top: 0.3px solid #674842;
+   opacity: 20%;
+   margin-bottom: 35px;
+}
+
+form {
+  /* position: relative; */
+  margin: 0 auto;
+  width: 550px;
+  height: 100px;
+}
+
+input {
+  padding: 12px 20px;
+  border: none;
+  margin: 8px 0;
+  font-family: 'Gotu', sans-serif;
+  color: #674842;
+  font-size: 15px;
+  /* display: block; */
+  background-color: #FBF9EB;
+  border-radius: 4px;
+}
+
+.subscribe{
+  text-align: center;
+}
+
+.subscribe-input[type=email]{
+  border-radius: 4px 0 0 4px;
+  height: 50px;
+  width: 60%;
+  /* box-sizing: border-box; */
+  color: #4AAC8C;
+  display: inline-block;
+}
+
+.subscribe-input[type=email]::placeholder { /* Chrome, Firefox, Opera, Safari 10.1+ */
+  color: #4AAC8C;
+  opacity: 1; /* Firefox */
+  font-size: 16px;
+}
+
+.subscribe-input[type=submit]{
+  border-radius: 0 4px 4px 0;
+  background-color: #4AAC8C;
+  opacity: 70%;
+  height: 74px;
+  width: 20%;
+  /* color: #674842; */
+  color: #FBF9EB;
+  display: inline-block;
+  margin-left: -4px;
+}
+
+/* .sns {
+  display: inline-block;
+} */
+
+.footer-credits {
+  padding: 50px 0 20px 0;
+  width: 100%;
+  display: inline-block;
+  margin: 0;
+  color: #674842;
+  text-align: center;
+  margin-bottom: -50px;
+}
+
+
+/* contact.html */
+
+.message-form {
+  margin-top: 30px;
+}
+input[type=radio]{
+  display: inline-block;
+  margin-right: 5px;
+}
+
+input[type=checkbox]{
+  margin-right: 5px;
+}
+
+.input-para {
+  font-size: 14px;
+  color: #674842;
+}
+
+.radio-container {
+  margin-bottom: 15px;
+}
+
+.contact-input-div {
+  display: inline-block;
+  margin-left: 20px;
+}
+
+.contact-input-div label:after {
+  content:" *";
+  color: #EF7767;
+}
+
+.contact-input-div p:after {
+  content:" *";
+  color: #EF7767;
+}
+
+.radio-container label:after {
+  content:"";
+}
+
+.contact-input-div textarea {
+  padding: 12px 20px;
+  border: none;
+  margin: 8px 0;
+  font-family: 'Gotu', sans-serif;
+  color: #674842;
+  font-size: 15px;
+  background-color: #FBF9EB;
+  border-radius: 4px;
+  letter-spacing: 1px;
+}
+
+/* .contact-submit-div {
+  width: 48px;
+} */
+
+/* .contact-submit {
+  margin: 20px 70% 20px 10%;
+} */
+
+#order-number-div {
+  visibility: hidden;
+}
+/*
+.nav-select {
+  display: none;
+} */
+
+@media (max-width: 1028px){
+
+  .header-wrapper {
+    /* display: block; */
+    margin: 0 auto;
+  }
+
+  .nav {
+    padding: 0;
+  }
+
+  .nav-ul {
+    margin: 0 auto;
+    text-align: center;
+  }
+
+  .menu {
+    /* display: block; */
+  }
+
+  .menu-li {
+    padding: 10px;
+    font-size: 23px;
+  }
+
+  .contact-ul {
+    display: block;
+    font-size: 23px;
+    flex: 0;
+  }
+
+  .logo_img {
+    width: 70px;
+  }
+
+  .item-card {
+    width: 50%;
+  }
+
+  h1 {
+    margin-top: 6rem;
+    margin-bottom: 4rem;
+    font-size: 35px;
+  }
+  /* .nav-ul {
+    display: none;
+  }
+
+  .nav-select {
+    display: inline-block;
+  } */
+
+}
+
+@media (max-width: 768px){
+  .menu-li {
+    font-size: 20px;
+    /* padding: 10px; */
+  }
+
+  h1 {
+    font-size: 25px;
+  }
+
+  .menu {
+    display: block;
+  }
+}
+
+@media (max-width: 544px){
+  h1 {
+    font-size: 20px;
+    margin: 50px 0 35px 0;
+  }
+
+  .item-card {
+    width: 80%;
+  }
+
+  .contact-li {
+    font-size: 20px;
+  }
+
+}
