@@ -1,4 +1,5 @@
-/** Add any CSS you need to this file. */
+/* Add any CSS you need to this file. */
+
 body {
   margin: 0;
   background-color: #ECDEB3;
@@ -18,21 +19,22 @@ li {
 }
 
 h2 {
-  font-size: 20px;
+  font-size: 1.25rem;
   color: #3D8972;
   padding-bottom: 15px;
+  margin-left: 4%;
 }
 
 /* font for regular */
 
 p {
   font-family: 'Gotu', sans-serif;
-  font-size: 16px;
+  font-size: 1rem;
 }
 
 label {
   font-family: 'Gotu', sans-serif;
-  font-size: 14px;
+  font-size: 0.88rem;
   color: #674842;
 }
 
@@ -51,24 +53,20 @@ label {
   /* font-family: 'Playfair Display', serif; */
   /* font-family: 'Inconsolata', monospace; */
   /* font-family: 'Lora', serif; */
-  font-size: 25px;
+  font-size: 1.5rem;
   /* font-weight: 400; */
   padding: 0 30px 0 30px;
   /* color: brown; */
 }
 
 .first{
-  flex: 0.4;
+  flex: 0.5;
   /* padding: 10px 10px; */
 }
 
-.second {
-  flex: 1.6;
-  padding: 0 10% 0 10%;
-}
-
-.third{
-  flex: 0.4;
+.nav {
+  flex: 1;
+  /* padding: 0 10% 0 10%; */
 }
 
 .logo_img {
@@ -95,12 +93,8 @@ label {
   color: #EF7767;
 }
 
-.contact-li {
-  text-align: center;
-  color: #674842;
-}
 
-.contact-ul li:hover {
+.contact-li:hover {
   color: #7AA38B;
 }
 
@@ -111,7 +105,7 @@ h1 {
   /* padding-bottom:30px; */
   margin-top: 6rem;
   margin-bottom: 6rem;
-  font-size: 45px;
+  font-size: 2.8rem;
   color: #3D8972;
   text-decoration: underline;
 }
@@ -182,7 +176,6 @@ hr {
 form {
   /* position: relative; */
   margin: 0 auto;
-  width: 550px;
   height: 100px;
 }
 
@@ -192,10 +185,15 @@ input {
   margin: 8px 0;
   font-family: 'Gotu', sans-serif;
   color: #674842;
-  font-size: 15px;
+  font-size: 1rem;
   /* display: block; */
   background-color: #FBF9EB;
   border-radius: 4px;
+  text-align: center;
+}
+
+input::placeholder {
+  text-align: left;
 }
 
 .subscribe{
@@ -214,7 +212,7 @@ input {
 .subscribe-input[type=email]::placeholder { /* Chrome, Firefox, Opera, Safari 10.1+ */
   color: #4AAC8C;
   opacity: 1; /* Firefox */
-  font-size: 16px;
+  font-size: 1rem;
 }
 
 .subscribe-input[type=submit]{
@@ -246,9 +244,19 @@ input {
 
 /* contact.html */
 
+.form-container {
+  margin: 0 auto;
+  width: 53%;
+}
+
+.contact-h2 {
+  text-align: left;
+}
+
 .message-form {
   margin-top: 30px;
 }
+
 input[type=radio]{
   display: inline-block;
   margin-right: 5px;
@@ -259,17 +267,18 @@ input[type=checkbox]{
 }
 
 .input-para {
-  font-size: 14px;
+  font-size: 0.88rem;
   color: #674842;
 }
 
 .radio-container {
   margin-bottom: 15px;
+  text-align: left;
 }
 
 .contact-input-div {
-  display: inline-block;
   margin-left: 20px;
+  display: inline-block;
 }
 
 .contact-input-div label:after {
@@ -292,7 +301,7 @@ input[type=checkbox]{
   margin: 8px 0;
   font-family: 'Gotu', sans-serif;
   color: #674842;
-  font-size: 15px;
+  font-size: 0.93rem;
   background-color: #FBF9EB;
   border-radius: 4px;
   letter-spacing: 1px;
@@ -302,22 +311,69 @@ input[type=checkbox]{
   width: 48px;
 } */
 
-/* .contact-submit {
-  margin: 20px 70% 20px 10%;
-} */
-
 #order-number-div {
-  visibility: hidden;
-}
-/*
-.nav-select {
   display: none;
-} */
+}
+
+.dropbtn {
+  display: none;
+}
 
 @media (max-width: 1028px){
+  .nav-dropdown {
+    margin-left: 65%;
+  }
+  /* Dropdown Button */
+  .dropbtn {
+    background-color: #ECDEB3;
+    /* background-color: #EF7767; */
+    color: #674842;
+    padding: 0.9rem;
+    margin-bottom: 0.25rem;
+    font-size: 1.4rem;
+    font-family: 'Philosopher', sans-serif;
+    border: none;
+    display: block;
+  }
+
+  .dropbtn:hover{
+    color: #EF7767;
+  }
+
+  /* The container <div> - needed to position the dropdown content */
+  /* .nav-dropdown {
+    position: relative;
+  } */
+
+  /* Dropdown Content (Hidden by Default) */
+  .dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #f1f1f1;
+    /* max-width: 100%; */
+    box-shadow: 0px 8px 16px 0px wheat;
+    z-index: 1;
+  }
+
+  /* Links inside the dropdown */
+  .dropdown-content a {
+    color: #674842;
+    padding: 0.9rem;
+    text-decoration: none;
+    display: block;
+  }
+
+  /* Change color of dropdown links on hover */
+  .dropdown-content a:hover {background-color: #ddd;}
+
+  /* Show the dropdown menu on hover */
+  .nav-dropdown:hover .dropdown-content {display: block;}
+
+  /* Change the background color of the dropdown button when the dropdown content is shown */
+  .nav-dropdown:hover .dropbtn {background-color: #ECDEB3;}
+
 
   .header-wrapper {
-    /* display: block; */
     margin: 0 auto;
   }
 
@@ -336,13 +392,7 @@ input[type=checkbox]{
 
   .menu-li {
     padding: 10px;
-    font-size: 23px;
-  }
-
-  .contact-ul {
-    display: block;
-    font-size: 23px;
-    flex: 0;
+    font-size: 1.4rem;
   }
 
   .logo_img {
@@ -356,45 +406,58 @@ input[type=checkbox]{
   h1 {
     margin-top: 6rem;
     margin-bottom: 4rem;
-    font-size: 35px;
-  }
-  /* .nav-ul {
-    display: none;
+    font-size: 2.1rem;
   }
 
-  .nav-select {
-    display: inline-block;
-  } */
+  .form-container {
+    width: 75%;
+  }
+
+  .contact-submit {
+    padding: 15% 20%;
+  }
+
 
 }
 
 @media (max-width: 768px){
+  .nav-dropdown {
+    margin-left: 60%;
+  }
+
   .menu-li {
-    font-size: 20px;
+    font-size: 1.25rem;
     /* padding: 10px; */
   }
 
   h1 {
-    font-size: 25px;
+    font-size: 1.5rem;
   }
 
   .menu {
     display: block;
   }
+
+  .form-container {
+    margin: 0 auto;
+    width: 90%;
+  }
+
+  input {
+    padding: 7% 30% 7% 10%;
+    margin-right: 7%;
+  }
 }
 
 @media (max-width: 544px){
+
   h1 {
-    font-size: 20px;
+    font-size: 1.25rem;
     margin: 50px 0 35px 0;
   }
 
   .item-card {
     width: 80%;
-  }
-
-  .contact-li {
-    font-size: 20px;
   }
 
 }
