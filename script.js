@@ -118,9 +118,10 @@ window.onload = function(){
 
   function checkOrderProb() {
     if (document.getElementById('order-problem').checked) {
-        document.querySelector('#order-number-div').style.visibility = 'visible';
+        document.querySelector('#order-number-div').style.display = 'block';
+        document.getElementById('order-number').setAttribute("required", "");
     } else {
-        document.querySelector('#order-number-div').style.visibility = 'hidden';
+        document.querySelector('#order-number-div').style.display = 'none';
     }
   };
 
