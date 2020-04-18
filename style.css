@@ -428,7 +428,9 @@ input[type=checkbox]{
 }
 
 @media (max-width: 768px){
-
+  #items {
+    padding: 0 5em 0 5em;
+  }
   .items-wrapper{
     grid-template-columns: 1fr;
   }
@@ -499,7 +501,7 @@ input[type=checkbox]{
   }
 
   #items {
-    padding: 0 5em 0 5em;
+    padding: 0 4em 0 4em;
   }
 
   .item-card {
