@@ -40,28 +40,16 @@ label {
 }
 
 
-/* .site-header {
-  position: fixed;
-  margin-top: 0;
-} */
-
 .header-wrapper {
   min-height: 20vh;
   display: flex;
   align-items: center;
-  /* font-family: 'Raleway', sans-serif; */
-  /* font-family: 'Baloo Paaji 2', cursive; */
-  /* font-family: 'Playfair Display', serif; */
-  /* font-family: 'Inconsolata', monospace; */
-  /* font-family: 'Lora', serif; */
   font-size: 1.5rem;
-  /* font-weight: 400; */
   padding: 0 30px 0 30px;
 }
 
 .first{
   flex: 0.5;
-  /* padding: 10px 10px; */
 }
 
 .logo_img {
@@ -76,9 +64,7 @@ label {
 }
 
 .menu-li {
-  /* width: 20%; */
   padding: 30px;
-  /* text-align: center; */
   color: #674842;
 }
 
@@ -90,7 +76,6 @@ label {
   color: #EF7767;
 }
 
-
 .contact-li:hover {
   color: #7AA38B;
 }
@@ -99,17 +84,11 @@ label {
 h1 {
   min-height: 10vh;
   text-align: center;
-  /* padding-bottom:30px; */
   margin-top: 6rem;
   margin-bottom: 6rem;
   font-size: 2.8rem;
   color: #3D8972;
   text-decoration: underline;
-}
-
-/* content-container */
-.content-container {
-  padding: 0 30px 0 30px;
 }
 
 /* items section */
@@ -133,10 +112,7 @@ h1 {
 
 .item-card {
   text-align: center;
-  /* display: inline-block; */
   display: none;
-  /* width: 23%; */
-  /* padding: 0 3%; */
   vertical-align: top;
   margin-bottom: 2%;
 }
@@ -162,7 +138,6 @@ h1 {
 }
 
 /* item header */
-
 .category-title{
   font-family: 'Philosopher', sans-serif;
   font-weight: 700;
@@ -182,7 +157,6 @@ hr {
 }
 
 form {
-  /* position: relative; */
   margin: 0 auto;
   height: 100px;
 }
@@ -202,6 +176,18 @@ input {
 
 input::placeholder {
   text-align: left;
+}
+
+textarea {
+  padding: 12px 20px;
+  border: none;
+  margin: 8px 0;
+  font-family: 'Gotu', sans-serif;
+  color: #674842;
+  font-size: 0.93rem;
+  background-color: #FBF9EB;
+  border-radius: 4px;
+  letter-spacing: 1px;
 }
 
 .subscribe{
@@ -229,7 +215,6 @@ input::placeholder {
   opacity: 70%;
   height: 60%;
   width: 10%;
-  /* color: #674842; */
   color: #FBF9EB;
   display: inline-block;
   margin-left: -4px;
@@ -248,6 +233,9 @@ input::placeholder {
 
 
 /* contact.html */
+#order-number-div {
+  display: none;
+}
 
 .form-container {
   margin: 0 auto;
@@ -282,6 +270,7 @@ input[type=checkbox]{
 }
 
 .contact-input-div {
+  grid-column-start: 1;
   margin-left: 20px;
   display: inline-block;
 }
@@ -300,24 +289,7 @@ input[type=checkbox]{
   content:"";
 }
 
-.contact-input-div textarea {
-  padding: 12px 20px;
-  border: none;
-  margin: 8px 0;
-  font-family: 'Gotu', sans-serif;
-  color: #674842;
-  font-size: 0.93rem;
-  background-color: #FBF9EB;
-  border-radius: 4px;
-  letter-spacing: 1px;
-}
-
-
-#order-number-div {
-  display: none;
-}
-
-.dropbtn {
+.nav-drop-btn {
   display: none;
 }
 
@@ -326,10 +298,9 @@ input[type=checkbox]{
   .nav-dropdown {
     margin-left: 65%;
   }
-  /* Dropdown Button */
-  .dropbtn {
+
+  .nav-drop-btn {
     background-color: #ECDEB3;
-    /* background-color: #EF7767; */
     color: #674842;
     padding: 1.5rem;
     margin-bottom: 0.25rem;
@@ -339,16 +310,14 @@ input[type=checkbox]{
     display: block;
   }
 
-  .dropbtn:hover {
+  .nav-drop-btn:hover {
     color: #EF7767;
   }
 
-  /* The container <div> - needed to position the dropdown content */
   .nav-dropdown {
     position: relative;
   }
 
-  /* nav content */
   .nav-content {
     display: none;
     position: absolute;
@@ -358,7 +327,6 @@ input[type=checkbox]{
     z-index: 1;
   }
 
-  /* Links inside the dropdown */
   .nav-content a {
     color: #674842;
     padding: 0.9rem;
@@ -366,19 +334,17 @@ input[type=checkbox]{
     display: block;
   }
 
-  /* Change color of dropdown links on hover */
   .nav-content a:hover {
     background-color: #FBF9EB;
   }
 
-  /* Show the dropdown menu on hover */
   .nav-dropdown:hover .nav-content {
     display: block;
   }
 
-  /* Change the background color of the dropdown button when the dropdown content is shown */
-  .nav-dropdown:hover .dropbtn {background-color: #ECDEB3;}
-
+  .nav-dropdown:hover .nav-drop-btn {
+    background-color: #ECDEB3;
+  }
 
   .header-wrapper {
     margin: 0 auto;
@@ -396,11 +362,6 @@ input[type=checkbox]{
 
   .logo_img {
     width: 70px;
-  }
-
-  .item-card {
-    width: 100%;
-    /* 50 */
   }
 
   h1 {
@@ -428,32 +389,38 @@ input[type=checkbox]{
 }
 
 @media (max-width: 768px){
+
   #items {
     padding: 0 5em 0 5em;
-  }
-  .items-wrapper{
-    grid-template-columns: 1fr;
   }
 
   h1 {
     font-size: 1.5rem;
   }
 
+  input {
+    padding: 7% 24% 7% 10%;
+    margin-right: 7%;
+  }
+
   .nav-dropdown {
     margin-left: 60%;
   }
 
-  .dropbtn {
+  .nav-drop-btn {
     font-size: 1.25rem;
   }
 
   .menu-li {
     font-size: 1.25rem;
-    /* padding: 10px; */
   }
 
   .menu {
     display: block;
+  }
+
+  .items-wrapper{
+    grid-template-columns: 1fr;
   }
 
   .item-card {
@@ -463,11 +430,6 @@ input[type=checkbox]{
   .form-container {
     margin: 0 auto;
     width: 90%;
-  }
-
-  input {
-    padding: 7% 30% 7% 10%;
-    margin-right: 7%;
   }
 
   .subscribe-input[type=email]{
@@ -486,13 +448,8 @@ input[type=checkbox]{
 }
 
 @media (max-width: 544px){
-
-  .nav-dropdown {
-    margin-left: 50%;
-  }
-
-  .dropbtn {
-    font-size: 1.1rem;
+  input {
+    padding: 7% 20% 7% 7%;
   }
 
   h1 {
@@ -500,13 +457,20 @@ input[type=checkbox]{
     margin: 50px 0 35px 0;
   }
 
+  textarea {
+    width: 90%;
+  }
+
   #items {
     padding: 0 4em 0 4em;
   }
 
-  .item-card {
-    width: 100%;
-    /* width: 80%; */
+  .nav-dropdown {
+    margin-left: 50%;
+  }
+
+  .nav-drop-btn {
+    font-size: 1.1rem;
   }
 
   .subscribe-input[type=email]{
